@@ -1,11 +1,29 @@
 public class Node
 {
 
+	/**
+	 * Coefficient
+	 */
 	private int coeff;
+	/**
+	 * Term Variable
+	 */
 	private String var;
+	/**
+	 * Term Exponent
+	 */
 	private int expo;
+	/**
+	 * Whether the term contains a variable
+	 */
 	private boolean noVar;
 
+	/**
+	 * Creates a term
+	 * @param coeff Coefficient
+	 * @param var Variable
+	 * @param expo EXponent
+	 */
 	public Node(int coeff, String var, int expo)
 	{
 		this.coeff = coeff;
@@ -14,12 +32,19 @@ public class Node
 		setExpo(expo);
 	}
 
-
+	/**
+	 * Overrides the default variable
+	 * @param var Variable
+	 */
 	public void setVariable(String var)
 	{
 		setVar(var);
 	}
 
+	/**
+	 * Sets the coefficient
+	 * @param coeff coefficient
+	 */
 	private void setCoeff(int coeff)
 	{
 		if(coeff > 1){
@@ -29,6 +54,10 @@ public class Node
 		}
 	}
 
+	/**
+	 * Sets exponent
+	 * @param expo exponent
+	 */
 	private void setExpo(int expo)
 	{
 		if(!noVar) {
@@ -38,6 +67,10 @@ public class Node
 		}
 	}
 
+	/**
+	 * Sets variable
+	 * @param var variable
+	 */
 	private void setVar(String var)
 	{
 		if(var.length() != 0){
@@ -48,16 +81,28 @@ public class Node
 		}
 	}
 
+	/**
+	 * Getter
+	 * @return Value
+	 */
 	public int getCoeff()
 	{
 		return coeff;
 	}
 
+	/**
+	 * Getter
+	 * @return Value
+	 */
 	public String getVar()
 	{
 		return var;
 	}
 
+	/**
+	 * Getter
+	 * @return Value
+	 */
 	public int getExpo()
 	{
 		return expo;
