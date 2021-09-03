@@ -3,6 +3,8 @@ import java.util.Random;
 
 /**
  * Randomly generates an unsimplified polynomial.
+ *
+ * @author Mani Shah
  */
 public class PolynomialGenerator
 {
